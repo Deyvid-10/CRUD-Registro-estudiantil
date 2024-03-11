@@ -1,0 +1,72 @@
+{% extends "base/basico.html" %}
+{% block contenido %}
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    <title>Ver</title>
+</head>
+<body>
+
+    <div class="cuerpo">
+
+        <a href="{% url 'inicio' %}" class="volver">&#x1F820; Volver</a>
+
+        <div class="contenedor_imagen">
+            <img src="{% static 'base/img/libro-abierto-512.png' %}" alt="icono" class="imagen">
+        </div>
+
+        <div class="lista_completa">
+
+            <div class="contenido_ver">
+                <h2 class="negrita">Nombre:</h2>
+                <h2>{{registro.nombre}}</h2>
+            </div>
+
+            <div class="contenido_ver">
+                <h2 class="negrita">Apellido:</h2>
+                <h2>{{registro.apellido}}</h2>
+            </div>
+
+            <div class="contenido_ver">
+                <h2 class="negrita">Fecha:</h2>
+                <h2>{{registro.fecha}}</h2>
+            </div>
+
+            <div class="contenido_ver">
+                <h2 class="negrita">Genero:</h2>
+                <h2>{{registro.genero}}</h2>
+            </div>
+
+            <div class="contenido_ver">
+                <h2 class="negrita">Nacionalidad:</h2>
+                <h2>{{registro.nacionalidad}}</h2>
+            </div>
+
+            <div class="contenido_ver">
+                <h2 class="negrita">Direccion:</h2>
+                <h2>{{registro.direccion}}</h2>
+            </div>
+
+            <div class="contenido_ver">
+                <h2 class="negrita">Contacto:</h2>
+                <h2>{{registro.contacto}}</h2>
+            </div>
+
+            <div class="contenido_ver">
+                <h2 class="negrita">Matricula:</h2>
+                <h2>{{registro.matricula}}</h2>
+            </div>
+
+            <div class="contenido_ver">
+                <h2 class="negrita">Curso:</h2>
+                <h2>{{registro.curso}}</h2>
+            </div>
+
+        </div>
+
+    </div>
+</body>
+</html>
+
+{% endblock %}

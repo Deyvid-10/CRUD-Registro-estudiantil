@@ -1,0 +1,35 @@
+{% extends "base/basico.html" %}
+{% block contenido %}
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    <title>Eliminar</title>
+</head>
+<body>
+    
+    <div class="cuerpo">
+        <a href="{% url 'inicio' %}" class="volver">&#x1F820; Volver</a>
+
+        <div class="contenedor_imagen">
+            <img src="{% static 'base/img/libro-abierto-512.png' %}" alt="icono" class="imagen">
+        </div>
+
+
+
+        <form method="post">
+            <div class="contenedor_imagen">
+                <img src="{% static 'base/img/alerta.png' %}" alt="icono" class="alerta">
+            </div>
+            {% csrf_token %}
+            <p id="aviso">Esta seguro en eliminar: {{registro}}?</p>
+            <div class="contenedor_boton">
+                <button type="submit" class="confirmar_eliminar">Eliminar</button>
+            </div>
+        </form>
+        <br>
+    </div>
+</body>
+</html>
+
+{% endblock %}

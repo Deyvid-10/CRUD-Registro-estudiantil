@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="{% static 'base/estilo1.css' %}">
+    <link rel="icon" href="{% static 'base/libro-abierto-64.ico'%}">
+</head>
+
+<style>
+    body
+    {
+        background-image: url("{% static 'base/img/fondo.avif' %}");
+        background-size: cover;
+        margin: 0;
+    }
+</style>
+
+<body>
+
+    {% block contenido %}
+    {% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,51 @@
+{% extends "base/basico.html" %}
+{% block contenido %}
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    <title>Registro</title>
+</head>
+<body>
+    
+    <div class="cuerpo">
+
+        <div class="contenedor_imagen">
+                <img src="{% static 'base/img/libro-abierto-512.png' %}" alt="icono" class="imagen">
+        </div>
+        
+        <div class="contenedor_agregar">
+            <a href="{% url 'agregar' %}" class="agregar">&#x271A;</a>
+        </div>
+
+        <div class="lista_completa">
+
+            {%for r in registro%}
+
+            <div class="lista">
+
+                <a href="{% url 'ver' r.id %}">{{r}}</a>
+
+                <div>
+                    <a href="{% url 'editar' r.id %}" class="editar">&#9678;</a>
+                    <a href="{% url 'eliminar' r.id %}" class="eliminar">&#x2716;</a>
+                </div>
+        
+            </div>
+
+            {% empty %}
+
+                <h1>No hay registros</h1>
+
+            {%endfor%}
+
+
+
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+{% endblock %}

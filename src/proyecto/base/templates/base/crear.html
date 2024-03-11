@@ -1,0 +1,32 @@
+{% extends "base/basico.html" %}
+{% block contenido %}
+{% load static %}
+
+<!DOCTYPE html>
+<head>
+    <title>Agregar</title>
+</head>
+<body>
+    <div class="cuerpo">
+        <a href="{% url 'inicio' %}" class="volver">&#x1F820; Volver</a>
+
+        <div class="contenedor_imagen">
+            <img src="{% static 'base/img/libro-abierto-512.png' %}" alt="icono" class="imagen">
+        </div>
+
+        <form method="post" enctype="multipart/form-data">
+            <div class="formulario">
+                {% csrf_token %}
+                {{ form.as_p }}
+            </div>
+
+            <div class="contenedor_boton">
+                <button type="submit">Guardar</button>
+            </div>
+        </form>
+        <br>
+    </div>        
+</body>
+</html>
+
+{% endblock %}
