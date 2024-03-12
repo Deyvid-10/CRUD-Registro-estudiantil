@@ -4,16 +4,18 @@ Este CRUD está desarrollado en Django con el propósito de demostrar no solo mi
 
 ## Requsitos
 
-  -Tener python 3.12.2 instalado
+    -Tener python 3.12.2 instalado
 
 ## Pasos para iniciar el sitio
 
-  1-Abre una terminal y con 'cd' navega hasta la ruta donde tienes guardado el proyeto
-  2-Instala virtualenv con el comando 'pip install virtualenv'
-  3-Aun en la carpeta donde tienes el proyecto instala las dependencias desde el archivo 'requirements.txt' con el comando 'pip install -r requirements.txt'
-  4-Activa las variables de entorno con '.\nombre_de_entorno\Scripts\activate'
-  5-Con 'cd' ve a la ruta donde se encuentra el archivo 'manage.py', ejecuta 'cd .\src\proyecto'
-  6-Una vez en la ruta de la carpeta donde esta el archivo 'manage.py' ejecuta 'python mange.py runserver' para iniciar el sitio
+    1-Abre una terminal y con 'cd' navega hasta la ruta donde tienes guardado el proyeto
+    2-Instala virtualenv con el comando 'pip install virtualenv'
+    3-Aun en la carpeta donde tienes el proyecto instala las dependencias desde el archivo 'requirements.txt' con el comando 'pip install -r requirements.txt'
+    4-Activa las variables de entorno con '.\nombre_de_entorno\Scripts\activate'
+    5-Con 'cd' ve a la ruta donde se encuentra el archivo 'manage.py', ejecuta 'cd .\src\proyecto'
+    6-Una vez en la ruta de la carpeta donde esta el archivo 'manage.py' ejecuta 'python mange.py runserver' para iniciar el sitio
+
+
 
 
 ### `pip install virtualenv`
